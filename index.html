@@ -1,187 +1,213 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] WWSoldas</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    <title>WWSoldas</title>
+    <!-- <link rel="stylesheet" href="./wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" /> -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/19.3.55/material.css" />
     <link href="https://cdn.datatables.net/1.11.5/css/dataTables.bulma.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css" rel="stylesheet" />
-
+    <link rel="stylesheet" type="text/css" href="./wwwroot/css/site.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
-<body class="bd_principal">
-    <header class="">
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
-                    <img src="~/images/logo.wwsoldas .jpg" class="logo_home" />
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index"><span class="btn btn-outline-secondary">Home</span></a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link text-dark dropdown-toggle" asp-area="" asp-action="Index" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="btn btn-outline-secondary">Produtos</span></a>
-                            <div class="dropdown-menu menu-produtos" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" asp-area="" asp-controller="Produtos" asp-action="Maquinas"><span class="btn btn-outline-dark">Máquinas</span></a>
-                                <a class="dropdown-item" href="#"><span class="btn btn-outline-dark">Eletrodos</span>  </a>
-                                <a class="dropdown-item" href="#"><span class="btn btn-outline-dark"> Epis</span></a>
-                                <a class="dropdown-item" href="#"><span class="btn btn-outline-dark">Reguladores</span>  </a>
-                            </div>
 
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy"><span class="btn btn-outline-secondary">Sobre</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index"><span class="btn btn-outline-secondary">Contato</span></a>
-                        </li>
-                    </ul>
+<body>
+    <div class="conteudo">
+        <!--CABEÇALHO-->
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="/index.html"><img class="logo-home" src="./wwwroot/images/logo.wwsoldas .jpg"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">             
+                        <span class="navbar-toggler-icon fa fa-list"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/sobre.html">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/contato.html">Contato</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Produtos
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item " href="#">Arame mig</a></li>
+                                    <li><a class="dropdown-item" href="#">Eletrodos</a></li>
+                                    <li><a class="dropdown-item" href="#">Epis</a></li>
+                                    <li><a class="dropdown-item" href="/pages/maquinas/maquinas.html">Equipamentos</a></li>
+                                </ul>
+
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
-
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-            <ejs-scripts></ejs-scripts>
-        </main>
-    </div>
-
-
-    <footer class="text-center text-lg-start bg-dark text-muted">
-        <!-- Section: Social media -->
-        <!--<section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">-->
-        <!-- Left -->
-        <!--<div class="me-5 d-none d-lg-block">
-            <span>Conecte-se conosco nas redes sociais:</span>
-        </div>-->
-        <!-- Left -->
-        <!-- Right -->
-        <!-- Right -->
-        <!--</section>-->
-        <!-- Section: Social media -->
-        <!-- Section: Links  -->
-        <br />
-        <section class="">
-            <div class="container text-center text-md-start mt-5">
-                <!-- Grid row -->
-                <div class="row mt-3">
-                    <!-- Grid column -->
-                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                        <!-- Content -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            <i class="fas fa-gem me-3"></i>WWsoldas
-                        </h6>
-                        <p>
-                            Tudo que você precisa para solda em um só lugar!
-                        </p>
-                        <div>
-                            <a target="_blank" href="https://www.facebook.com/lojaeduar" class="me-4 text-reset">
-
-                                <i class="fab fa-facebook-f"></i>
-
+            </nav>
+        </header>
+        <br>
+        <!--CONTEUDO-->
+        <main>
+            <section class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="card" style="width: 14rem;">
+                            <a class="" href="./pages/maquinas/maquinas.html">
+                                <img class="card-img-top" src="./wwwroot/images/inversora-digital-wwsoldas.png" />
+                                <div class="card-body">
+                                    <p class="card-text text-center"><span class="btn btn-outline-secondary"><samp
+                                                class="font-weight-bold">MÁQUINAS</samp></span></p>
+                                </div>
                             </a>
-                            <a target="_blank" href="https://www.instagram.com/wwsoldas" class="me-4 text-reset">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a target="_blank" href="https://www.youtube.com/channel/UCAPXnsolcxRZmUP1fD_6LTA?view_as=subscriber" class="me-4 text-reset">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                            <a target="_blank" href="https://api.whatsapp.com/send?phone=551129574061&text=Ol%C3%A1%21+estou+na+loja+COMERCIAL+EDUAR+e+gostaria+de+mais+informa%C3%A7%C3%B5es." class="me-4 text-reset">
-                                <i class="fab fa-whatsapp"></i>
-                            </a>
-
                         </div>
                     </div>
-                    <!-- Grid column -->
-                    <!-- Grid column -->
-                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            Produtos
-                        </h6>
-                        <p>
-                            <a href="#!" class="text-reset">Inversoras</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">Eeletrodos</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">Reguladores</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">Epis</a>
-                        </p>
+                    <div class="col-sm-3">
+                        <div class="card" style="width: 14rem;">
+                            <a href="#">
+                                <img class="card-img-top"
+                                    src="https://images.tcdn.com.br/img/img_prod/606086/eletrodo_revestido_7018_e_2_5mm_1_kg_denver_2957_1_20200505113514.jpg"
+                                    alt="Card image cap">
+                                <div class="card-body ">
+                                    <p class="card-text text-center"><span
+                                            class="btn btn-outline-secondary font-weight-bold">ELETRODOS</span></p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <!-- Grid column -->
-                    <!-- Grid column -->
-                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            Links uteis
-                        </h6>
-                        <p>
-                            <a href="#!" class="text-reset">Produtos</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">Sobre</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">Home</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">Artigos</a>
-                        </p>
+                    <div class="col-sm-3">
+                        <div class="card " style="width: 14rem;">
+                            <a href="#">
+                                <img class="card-img-top"
+                                    src="https://static.ferramentaskennedy.com.br/storage/1200/arame-para-solda-mig-08mm-15kg-bumafer_1_1624554444.jpg?qlty=50"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text text-center"><span
+                                            class="btn btn-outline-secondary font-weight-bold">ARAME MIG</span></p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <!-- Grid column -->
-                    <!-- Grid column -->
-                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            Contato
-                        </h6>
-                        <p><i class="fas fa-home me-3"></i>Rua Itinguçu,2811- São Paulo-SP</p>
-                        <p>
-                            <i class="fas fa-envelope me-3"></i>
-                            vendas@eduar.com.br
-                        </p>
-                        <p><i class="fas fa-phone me-3"></i> + 55 11 2957 4061</p>
-                        <p><i class="fas fa-print me-3"></i> + 55 11 954581488</p>
+                    <div class="col-sm-3">
+                        <div class="card bg-transparent" style="width: 14rem;">
+                            <a href="#">
+                                <img class="card-img-top"
+                                    src="https://www.oxibras.com.br/wp-content/uploads/2019/09/aramesubmerso.jpg"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text text-center"><span
+                                            class="btn btn-outline-secondary font-weight-bold">ARCO SUBMERSO</span></p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <!-- Grid column -->
                 </div>
-                <!-- Grid row -->
+                <br />
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="card bg-transparent" style="width: 14rem;">
+                            <a href="#">
+                                <img class="card-img-top"
+                                    src="https://http2.mlstatic.com/D_NQ_NP_2X_975742-MLB31146280897_062019-F.webp"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text text-center"><span
+                                            class="btn btn-outline-secondary font-weight-bold">TUNGSTÊNIO</span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card bg-transparent" style="width: 14rem;">
+                            <a href="#">
+                                <img class="card-img-top"
+                                    src="https://http2.mlstatic.com/D_NQ_NP_2X_882972-MLB31212381040_062019-F.webp"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text text-center"><span
+                                            class="btn btn-outline-secondary font-weight-bold">REGULADORES</span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+
+                        <div class="card bg-transparent" style="width: 14rem;">
+                            <a href="#">
+                                <img class="card-img-top"
+                                    src="https://http2.mlstatic.com/D_NQ_NP_2X_933667-MLB45855115687_052021-F.webp"
+                                    alt="Card image cap">
+
+                                <div class="card-body">
+                                    <p class="card-text text-center"><span
+                                            class="btn btn-outline-secondary font-weight-bold">CONSUMÍVEIS</span></p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card cardy-1" style="width: 14rem;">
+                            <a href="#">
+                                <img class="card-img-top"
+                                    src="https://http2.mlstatic.com/D_NQ_NP_2X_683114-MLB31173244491_062019-F.webp"
+                                    alt="">
+                                <div class="card-body">
+                                    <p class="card-text text-center"><span
+                                            class="btn btn-outline-secondary font-weight-bold">EPIS</span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <br>
+        <!--RODAPÉ-->
+        <footer class="footer-pr">
+            <div class="flex-container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <ul class="menu-footer-dados">
+                            <li><a href="#" class="text-white"><h5>WW SOLDAS</h6></a></li>
+                            <li><a href="#" class="text-white"> <p><i class="fas fa-home me-3"></i>Rua Itinguçu,2811- São Paulo-SP</p></a></li>                           
+                            <li><a href="#" class="text-white"> <p>
+                                <i class="fas fa-envelope me-3"></i>
+                                vendas@eduar.com.br
+                            </p></a></li>
+                            <li><a href="" class="text-white"><p><i class="fas fa-phone me-3"></i> + 55 11 2957 4061</p></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center p-4 text-white" style="background-color: rgba(0, 0, 0, 0.05);">
+                            © 2022 Copyright:
+                            <a class="fw-bold text-white" href="https://eduar.com.br/" target="_blank">ww soldas </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <ul class="menu-footer justify-content-end">
+                            <li><a href=""><span class="fa fa-whatsapp fa-2x"></span></a></li>
+                            <li><a href=""><span class="fa fa-facebook-official fa-2x"></span></a></li>
+                            <li><a href=""><span class="fa fa-instagram fa-2x"></span></a></li>
+                            <li><a href=""><span class="fa fa fa-youtube fa-2x"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </section>
-        <!-- Section: Links  -->
-        <!-- Copyright -->
-        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-            © 2022 Copyright:
-            <a class="text-reset fw-bold" href="https://eduar.com.br/">WWsoldas </a>
-        </div>
-        
-        <!-- Copyright -->
-    </footer>
-    <!-- Footer -->
+        </footer>
+    </div>
 
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    <script src="https://cdn.syncfusion.com/ej2/19.3.55/dist/ej2.min.js"></script>
-    <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bulma.min.js"></script>
-
-
-   
+    <script src="./wwwroot/lib/jquery/dist/jquery.min.js"></script>
+    <script src="./wwwroot/js/site.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/2debddaff5.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
