@@ -1,0 +1,196 @@
+﻿
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+    /* html {
+        font-size: 15px;
+    }     */
+}
+@media (max-width: 768px) {
+    /* html {
+        font-size: 10px;
+    }     */
+}
+
+@media (max-width: 769px) {
+    .foto-inversora-digital {
+        width: 120px;
+        height: 120px;
+    }
+}
+@media (max-width: 769px) {
+    .foto-wse-250 {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+
+/** CODIGO PAGINAL PRINCIPAL*/
+
+/**image logo na pagina principal***/
+.logo-home {
+    width: 90px;
+    height: 65px;
+    opacity: 1;
+}
+
+.icone_footer {
+    width: 35px;
+    height: 35px;
+}
+
+.card-img-top {
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+ 
+.menu-produto{
+    opacity:0.1;
+}
+/***********CARD PAGINAL INICIAL****************/
+
+/**ESTILO DA PAGINA INDEX**/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+:root{
+    --cor-fundo:black;
+}
+.conteudo{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;  */
+}
+/**FIM CSS PAGINA INDEX**/
+/**CSS MENU PRINCIPAL**/
+
+.navbar-toggler{
+    color:white;
+}
+.navbar{
+     background-color: darkblue;
+    color: white;  
+    
+}
+.navbar ul{
+    background-color: darkblue;
+   color: white;  
+}
+.navbar ul li a:focus-within{   
+     color: white; 
+   
+}
+.navbar ul li a:active{   
+     background-color: rgb(67, 177, 30); 
+   
+}
+.navbar ul li a{   
+     color: white;
+    background-color: darkblue;
+    font-weight: 500; 
+}
+.navbar ul li a {   
+    color: white;   
+    font-size: 22px;
+    font-weight: 500; 
+}
+.navbar li a:hover{  
+    border: 1px solid rgb(67, 177, 30);;
+   background-color: rgb(67, 177, 30);
+   border-radius: 5px;
+   color: white; 
+    
+}
+
+.navbar li ul li a{   
+     color: white; 
+}
+
+.img-logo{
+    width: 100px;
+    height: 80px;
+    
+}
+.nome-logo{
+    color: white;
+}
+
+/**CSS RODAPÉ**/
+.footer-pr{
+    width: 100%;
+    background-color: darkblue;
+}
+.fa-whatsapp{
+     color: rgb(247, 243, 243);
+    
+ }
+.fa-facebook-official{
+     color: rgb(247, 243, 243); 
+    
+ }
+ .fa-instagram{
+     color: rgb(247, 243, 243);
+    
+ }
+ .fa-youtube{
+     color: rgb(247, 243, 243); 
+    
+ }
+ .menu-footer{
+     list-style: none;
+     margin-top: 40px;
+ }
+ .menu-footer-dados{
+    list-style: none;
+    margin-top: 20px;
+}
+.menu-footer-dados li a{
+    text-decoration: none;
+}
+ .menu-footer li{
+     display: inline-block;
+ }
+ /**FIM CSS RODAPÉ**/
+
+ /**CSS INVERSORA DIGITAL**/
+ .foto-inversora-digital{
+    width: 350px;
+    height: 320px;
+ }
+ .foto-wse-250{
+    width: 450px;
+    height: 420px;
+ }
+ /**FIM CSS INVERSORA DIGITAL**/
