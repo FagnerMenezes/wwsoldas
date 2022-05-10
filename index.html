@@ -7,7 +7,7 @@
     <title>WWSoldas</title>
     <!-- <link rel="stylesheet" href="./wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" /> -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.datatables.net/1.11.5/css/dataTables.bulma.min.css" rel="stylesheet" /> 
+    <link href="https://cdn.datatables.net/1.11.5/css/dataTables.bulma.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/wwwroot/css/site.css" />
 </head>
@@ -35,6 +35,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="/pages/contato.html">Contato</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/privacidade.html">Privacidade</a>
+                            </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
@@ -44,7 +47,8 @@
                                     <li><a class="dropdown-item " href="#">Arame mig</a></li>
                                     <li><a class="dropdown-item" href="#">Eletrodos</a></li>
                                     <li><a class="dropdown-item" href="#">Epis</a></li>
-                                    <li><a class="dropdown-item" href="/pages/maquinas/maquinas.html">Equipamentos</a>
+                                    <li><a class="dropdown-item"
+                                            href="/pages/maquinas/equipamentos.html">Equipamentos</a>
                                     </li>
                                 </ul>
 
@@ -58,11 +62,11 @@
         <br>
         <!--CONTEUDO-->
         <main class="container">
-            <section >
+            <section>
                 <div class="row">
                     <div class="col-sm-3">
-                        <div class="card card-index" >
-                            <a class="" href="./pages/maquinas/maquinas.html">
+                        <div class="card card-index">
+                            <a class="" href="./pages/maquinas/equipamentos.html">
                                 <img class="card-img-top" src="/wwwroot/images/tig-220p.png" />
                                 <div class="card-body">
                                     <p class="card-text text-center"><span class="btn btn-outline-secondary"><samp
@@ -72,7 +76,7 @@
                         </div>
                     </div>
                     <div class="col-sm-3">
-                        <div class="card card-index" >
+                        <div class="card card-index">
                             <a href="#">
                                 <img class="card-img-top"
                                     src="https://images.tcdn.com.br/img/img_prod/606086/eletrodo_revestido_7018_e_2_5mm_1_kg_denver_2957_1_20200505113514.jpg"
@@ -85,7 +89,7 @@
                         </div>
                     </div>
                     <div class="col-sm-3">
-                        <div class="card card-index" >
+                        <div class="card card-index">
                             <a href="#">
                                 <img class="card-img-top"
                                     src="https://static.ferramentaskennedy.com.br/storage/1200/arame-para-solda-mig-08mm-15kg-bumafer_1_1624554444.jpg?qlty=50"
@@ -98,7 +102,7 @@
                         </div>
                     </div>
                     <div class="col-sm-3">
-                        <div class="card card-index" >
+                        <div class="card card-index">
                             <a href="#">
                                 <img class="card-img-top"
                                     src="https://www.oxibras.com.br/wp-content/uploads/2019/09/aramesubmerso.jpg"
@@ -114,7 +118,7 @@
                 <br />
                 <div class="row">
                     <div class="col-sm-3">
-                        <div class="card card-index" >
+                        <div class="card card-index">
                             <a href="#">
                                 <img class="card-img-top"
                                     src="https://http2.mlstatic.com/D_NQ_NP_2X_975742-MLB31146280897_062019-F.webp"
@@ -127,7 +131,7 @@
                         </div>
                     </div>
                     <div class="col-sm-3">
-                        <div class="card card-index" >
+                        <div class="card card-index">
                             <a href="#">
                                 <img class="card-img-top"
                                     src="https://http2.mlstatic.com/D_NQ_NP_2X_882972-MLB31212381040_062019-F.webp"
@@ -141,7 +145,7 @@
                     </div>
                     <div class="col-sm-3">
 
-                        <div class="card card-index" >
+                        <div class="card card-index">
                             <a href="#">
                                 <img class="card-img-top"
                                     src="https://http2.mlstatic.com/D_NQ_NP_2X_933667-MLB45855115687_052021-F.webp"
@@ -156,7 +160,7 @@
 
                     </div>
                     <div class="col-sm-3">
-                        <div class="card card-index" >
+                        <div class="card card-index">
                             <a href="#">
                                 <img class="card-img-top"
                                     src="https://http2.mlstatic.com/D_NQ_NP_2X_683114-MLB31173244491_062019-F.webp"
@@ -207,18 +211,31 @@
                     </div>
                 </div>
             </div>
-            
-            <a class="whastapp-index" href="https://api.whatsapp.com/send?phone=551129574061&amp;text=Ol%C3%A1%21+estou+na+loja+COMERCIAL+EDUAR+e+gostaria+de+mais+informa%C3%A7%C3%B5es."  target="_blank">
-            <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+            <div class="bottom-fiexed div-privacidade" id="div-privacidade_">
+                <div class="row ">
+                    <div class="col-11">
+                        <p class="text-privacidade"><strong>Saiba mais como nós usamos seus dados em nosso Centro de Privacidade, visite nosso Painel de Privacidade.&nbsp</strong>
+                            <a href="/pages/privacidade.html">mais informaçoes.</a></p>
+                    </div>
+                    <div class="col-1">
+                        <button class="btn-privacidade" id="btn-privac" onclick="ocultaDiv()">Entendi</button>
+                    </div>
+                </div>
+            </div>
+
+            <a class="whastapp-index"
+                href="https://api.whatsapp.com/send?phone=551129574061&amp;text=Ol%C3%A1%21+estou+na+loja+COMERCIAL+EDUAR+e+gostaria+de+mais+informa%C3%A7%C3%B5es."
+                target="_blank">
+                <i style="margin-top:16px" class="fa fa-whatsapp"></i>
             </a>
         </footer>
-       
+
     </div>
 
-    <script src="./wwwroot/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/wwwroot/lib/jquery/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/2debddaff5.js" crossorigin="anonymous"></script>
-    <script src="./wwwroot/js/site.js"></script>
+    <script src="/wwwroot/js/site.js"></script>
 </body>
 
 </html>
