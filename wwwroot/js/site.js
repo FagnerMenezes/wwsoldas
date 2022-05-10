@@ -2,3 +2,9 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your JavaScript code.
+function ocultaDiv(){
+    
+     let div= document.getElementById('div-privacidade_');
+     div.style.display='none';
+
+}  
