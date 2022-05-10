@@ -88,7 +88,7 @@ button.accept-policy {
 }
 .card-maq:hover{
     background-color:rgb(62, 47, 227);  /** rgb(30, 6, 95);**/
-    border:2px solid rgb(238, 9, 9);
+    border:2px solid rgb(31, 225, 141);
     cursor: pointer;
     color: white;
     transition: 1;
@@ -106,7 +106,9 @@ background-color: cornflowerblue; */
 
 /**ESTILO DA PAGINA INDEX**/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
+.text-privacidade{
+    font-size: 12px;
+}
 .whastapp-index{  
     position:fixed;
     width:60px;
@@ -125,9 +127,34 @@ background-color: cornflowerblue; */
 border: 1px solid rgb(117, 117, 237);
 border-radius: 5px;
 width: 14rem;
-
-
 }
+.div-privacidade{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    position: fixed;
+    background-color:rgb(52, 51, 51) ;
+    width: 100%;
+    height: 80px;
+    color: white;
+    bottom: 0px;
+    text-align:center;
+}
+.btn-privacidade{
+    width: 120px;
+    height: 25px;
+    border: solid 1px white;
+    border-radius: 5px;
+    color: white;
+    background-color: darkblue;
+         
+}
+.card-index:hover{   
+    -webkit-transform:scale(1.1);
+        -ms-transform:scale(1.1);
+        transform:scale(1.1); 
+    }
 .conteudo{
     /* display: flex;
     flex-direction: row;
