@@ -6,7 +6,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-
+.conteudo{
+    /* background-color:rgb(19, 8, 37) ; */
+  
+}
 
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -80,11 +83,12 @@ button.accept-policy {
 .menu-produto{
     opacity:0.1;
 }
+
 /***********CARD PAGINAL INICIAL****************/
 
 /**INICIO CSS CARD PG MAQUINAS**/
 .card-maq{   
-    width:18em;  
+    width:16em;  
 }
 .card-maq:hover{
     background-color:rgb(62, 47, 227);  /** rgb(30, 6, 95);**/
@@ -103,6 +107,8 @@ background-color: cornflowerblue; */
 
 }
 /**FIM PAGINA CARD MAQUINAS***/
+
+/**--------------------------------------**/
 
 /**ESTILO DA PAGINA INDEX**/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
@@ -163,6 +169,8 @@ width: 14rem;
 }
 /**FIM CSS PAGINA INDEX**/
 
+/***-------------------------------------***/
+
 /**CSS MENU PRINCIPAL**/
 
 .navbar-toggler{
@@ -202,7 +210,6 @@ width: 14rem;
    color: white; 
     
 }
-
 .navbar li ul li a{   
      color: white; 
 }
@@ -215,6 +222,9 @@ width: 14rem;
 .nome-logo{
     color: white;
 }
+/**FIM CSS MENU PRINCIPAL**/
+
+/*****-------------------------------******/
 
 /**CSS RODAPÉ**/
 .footer-pr{
@@ -252,13 +262,37 @@ width: 14rem;
      display: inline-block;
  }
  /**FIM CSS RODAPÉ**/
+
+ /*****-------------------------------******/
+
+ /***CSS PAGINA MAQUINAS***/
+
 .container-maquinas{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
 }
+.div-titulo-maquinas
+{  
+    text-align: center;
+    border-radius:5px;   
+}
+.h3-titulo-nome-maq{
+    color: cornflowerblue;
+    font-weight:800;
+}
+.row-maq{
+    padding: 15px;
 
+}
+.h5-sub-titulo-maq{
+    color: crimson;
+    font-weight:600;
+}
+ /***FIM CSS PAGINA MAQUINAS***/
+
+ /*****-------------------------------******/
 
  /**CSS INVERSORA DIGITAL**/
  
