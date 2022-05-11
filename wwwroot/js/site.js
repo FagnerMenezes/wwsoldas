@@ -8,3 +8,6 @@ function ocultaDiv(){
      div.style.display='none';
 
 }  
+
+
+
