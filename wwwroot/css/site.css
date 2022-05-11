@@ -88,7 +88,7 @@ button.accept-policy {
 
 /**INICIO CSS CARD PG MAQUINAS**/
 .card-maq{   
-    width:16em;  
+    width: 15em;
 }
 .card-maq:hover{
     background-color:rgb(62, 47, 227);  /** rgb(30, 6, 95);**/
