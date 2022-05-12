@@ -7,8 +7,11 @@
 }
 
 .conteudo{
-    /* background-color:rgb(19, 8, 37) ; */
-  
+     
+     background-color:darkblue;
+}
+body{
+    background-color: darkblue;
 }
 
 /* Sticky footer styles
@@ -64,19 +67,22 @@ button.accept-policy {
 
 /**image logo na pagina principal***/
 .logo-home {
-    width: 120px;
-    height: 85px;
+    width: 100px;
+    height: 60px;
     opacity: 1;
 }
-
+.banner-home{
+    background-color: darkblue;
+    
+}
 .icone_footer {
     width: 35px;
     height: 35px;
 }
 
 .card-img-top {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     position: relative;
 }
  
@@ -91,7 +97,7 @@ button.accept-policy {
     width: 15em;
 }
 .card-maq:hover{
-    background-color:rgb(62, 47, 227);  /** rgb(30, 6, 95);**/
+    background-color:#6d2bb7; /*rgb(62, 47, 227);  /** rgb(30, 6, 95);**/
     border:2px solid rgb(31, 225, 141);
     cursor: pointer;
     color: white;
@@ -136,15 +142,16 @@ width: 14rem;
 }
 .div-privacidade{
     display: flex;
-    flex-direction: row;
+    flex-direction:column;
     justify-content: center;
-    align-items: stretch;
+    align-items:baseline;
     position: fixed;
-    background-color:rgb(52, 51, 51) ;
-    width: 100%;
-    height: 80px;
-    color: white;
-    bottom: 0px;
+    background-color:white ;
+    width: 400px;
+    height: 120px;
+    color: rgb(21, 4, 73);
+    bottom: 20px;
+    left: 20px;
     text-align:center;
 }
 .btn-privacidade{
@@ -156,34 +163,56 @@ width: 14rem;
     background-color: darkblue;
          
 }
+.text-privacidade_{
+    color: white;
+}
 .card-index:hover{   
+    
     -webkit-transform:scale(1.1);
         -ms-transform:scale(1.1);
         transform:scale(1.1); 
     }
-.conteudo{
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;  */
-}
+
+    .card-index:hover{   
+    
+       background-color: rgb(69, 69, 156);
+    }
+    .card-index{   
+    
+        background-color: darkblue;
+     }
+
 /**FIM CSS PAGINA INDEX**/
 
 /***-------------------------------------***/
 
 /**CSS MENU PRINCIPAL**/
-
+@media (max-width: 509px) {
+    .navbar{
+       background-color: #9261c8;
+       color: white;  
+       border-radius: 15px;
+       margin-top: 0px;
+       width: 100%;
+       
+   }
+}
 .navbar-toggler{
     color:white;
 }
-.navbar{
-     background-color: darkblue;
+@media (min-width: 1200px) {
+ .navbar{
+    background-color: #9261c8;
     color: white;  
+    border-radius: 15px;
+    margin-top: 70px;
+    width: 1100px;
     
+} 
 }
 .navbar ul{
-    background-color: darkblue;
-   color: white;  
+    background-color: #9261c8;
+    color: white;  
 }
 .navbar ul li a:focus-within{   
      color: white; 
@@ -194,17 +223,17 @@ width: 14rem;
    
 }
 .navbar ul li a{   
-     color: white;
-    background-color: darkblue;
+    color: white;
+    background-color: #9261c8;
     font-weight: 500; 
 }
 .navbar ul li a {   
     color: white;   
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500; 
 }
 .navbar li a:hover{  
-    border: 1px solid rgb(67, 177, 30);;
+border: 1px solid rgb(67, 177, 30);;
    background-color: rgb(67, 177, 30);
    border-radius: 5px;
    color: white; 
@@ -229,7 +258,8 @@ width: 14rem;
 /**CSS RODAPÉ**/
 .footer-pr{
     width: 100%;
-    background-color: darkblue;
+    background-color: #9261c8;
+    border-top:1px solid white ;
 }
 .fa-whatsapp{
      color: rgb(247, 243, 243);
@@ -281,13 +311,14 @@ width: 14rem;
 .h3-titulo-nome-maq{
     color: cornflowerblue;
     font-weight:800;
+    font-size: 25px;
 }
 .row-maq{
     padding: 15px;
 
 }
 .h5-sub-titulo-maq{
-    color: crimson;
+    color: white;
     font-weight:600;
 }
  /***FIM CSS PAGINA MAQUINAS***/
@@ -297,7 +328,50 @@ width: 14rem;
  /**CSS INVERSORA DIGITAL**/
  
  .foto-maquinas{
-    width: 450px;
-    height: 420px;
+    width: 400px;
+    height: 400px;
+    
+ }
+ td{
+     color: white;
+     border: 1px solid lightgray;
+ }
+ tr{
+    color: white;
+    border: 1px solid lightgray;
+}
+ .table{
+     border: 1px solid lightgray;
+ }
+ .titulo-inversoras{
+     color: white;
+     font-size: 22px;
+     margin-left: 20px;
+     text-transform: uppercase;
+     font-weight: 500;
+ }
+ hr{
+    
+     border: 2px solid  rgb(159, 9, 139);
+ }
+
+ .row-maquinas{
+  
+     width:1200px;
  }
  /**FIM CSS INVERSORA DIGITAL**/
+
+ /**CSS PAGINA CONTATO**/
+ .menu-footer-dados li a{
+     color: white;
+ }
+ .form-label{
+     color: white;
+ }
+ /**FIM CSS PAGINA CONTATO**/
+
+ /**CSS PAGINA SOBRE***/
+.text-sobre{
+    color: white;
+}
+ /**FIM CSS PAGINA SOBRE***/
