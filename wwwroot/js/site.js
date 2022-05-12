@@ -14,5 +14,6 @@ $(document).ready(function () {
      $(function () {       
           document.querySelector("link[rel='shortcut icon']").href = "/wwwroot/images/favicon_io (1)/favicon.ico";
          // document.querySelector("link[rel='shortcut icon']").href = "/wwwroot/images/logo.wwsoldas.png";
+         
      });
 });
