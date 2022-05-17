@@ -14,148 +14,141 @@
 </head>
 
 <body>
+    <!--CABEÇALHO-->
+    <header>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html"><img class="logo-home"
+                        src="/wwwroot/images/logo.wwsoldas.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 
-    <div>
+                    <span class="navbar-toggler-icon"><span class="fa fa-list"></span></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/sobre.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/contato.html">Contato</a>
+                        </li>
 
-        <!--CABEÇALHO-->
-        <header>
-            <nav class="navbar navbar-expand-lg ">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="/index.html"><img class="logo-home"
-                            src="/wwwroot/images/logo.wwsoldas.png"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Produtos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item " href="/pages/arames/arames.html">Arame mig</a></li>
+                                <li><a class="dropdown-item" href="/pages/arames/eletrodos.html">Eletrodos</a></li>
+                                <li><a class="dropdown-item" href="/pages/arames/epis.html">Epis</a></li>
+                                <li><a class="dropdown-item" href="/pages/maquinas/equipamentos.html">Equipamentos</a>
+                            </ul>
 
-                        <span class="navbar-toggler-icon"><span class="fa fa-list"></span></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/pages/sobre.html">Sobre</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/pages/contato.html">Contato</a>
-                            </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <br />
+    <main class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h5 class="titulo-inversoras">Inversora Tig 220p Pulsada</h5>
+                <hr class="linha-divisao" />
+                <br />
+                <div>
+                    <img class="foto-maquinas" src="/wwwroot/images/tig-220p.png" alt="Alternate Text" />
+                </div>
+            </div>
 
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Produtos
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item " href="#">Arame mig</a></li>
-                                    <li><a class="dropdown-item" href="#">Eletrodos</a></li>
-                                    <li><a class="dropdown-item" href="#">Epis</a></li>
-                                    <li><a class="dropdown-item"
-                                            href="/pages/maquinas/equipamentos.html">Equipamentos</a></li>
-                                </ul>
+            <div class="col-sm-6">
+                <div class="col-sm-12">
+                    <table class="table table-borderless table-striped">
+                        <thead>
+                            <tr class="">
+                                <th>
+                                    <h5 class="text-left ">Especificações</h5>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Fases elétricas</td>
+                                <td>Monofásica</td>
+                            </tr>
+                            <tr>
+                                <td>Amperagem mínimo</td>
+                                <td>10 A</td>
+                            </tr>
+                            <tr>
+                                <td>Amperagem máximo</td>
+                                <td>220 A</td>
+                            </tr>
+                            <tr>
+                                <td>Peso</td>
+                                <td>20 kg</td>
+                            </tr>
 
-                            </li>
+                        </tbody>
+
+                    </table>
+                    <br />
+
+                    <a class="btn btn-danger align-content-center" href="/wwwroot/Catalogos/inversora-220-pulsada.pdf"
+                        target="_blank">
+                        <h5>Download Catálogo</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--RODAPÉ-->
+    <footer class="footer footer-pr">
+        <div class="container">
+            <div class="row justify-content-md-center ">
+                <div class="col col-md-4">
+                    <div>
+                        <ul class="menu-footer">
+                            <li><a href=""><span class="fa fa-whatsapp fa-2x"></span></a></li>
+                            <li><a href=""><span class="fa fa-facebook-official fa-2x"></span></a></li>
+                            <li><a href=""><span class="fa fa-instagram fa-2x"></span></a></li>
+                            <li><a href=""><span class="fa fa fa-youtube fa-2x"></span></a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="menu-footer-dados">
+                            <li><a href="#" class="text-white">
+                                    <h5>WW SOLDAS</h6>
+                                </a></li>
+                            <li><a href="#" class="text-white">
+                                    <p><i class="fas fa-home me-3"></i>Rua Itinguçu,2811- São Paulo-SP</p>
+                                </a></li>
+                            <li><a href="#" class="text-white">
+                                    <p>
+                                        <i class="fas fa-envelope me-3"></i>
+                                        vendas@eduar.com.br
+                                    </p>
+                                </a></li>
+                            <li><a href="" class="text-white">
+                                    <p><i class="fas fa-phone me-3"></i> + 55 11 2957 4061</p>
+                                </a></li>
                         </ul>
                     </div>
                 </div>
-            </nav>
-        </header>
-        <br />
-        <main class="row-maquinas">
-            <div class="row">
-                <div class="col-sm-6">
-                    <h5 class="titulo-inversoras">Inversora Tig 220p Pulsada Ac/dc</h5>
-                    <hr class="linha-divisao" />
-                    <br />
-                    <div>
-                        <img class="foto-maquinas"
-                            src="/wwwroot/images/tig-220p.png"
-                            alt="Alternate Text" />
-                    </div>
-                </div>
-
-                <div class="col-sm-6">
-                    <div class="col-sm-6">
-                        <table class="table table-borderless table-striped">
-                            <thead>
-                                <tr class="">
-                                    <th>
-                                        <h5 class="text-left ">Especificações</h5>
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Fases elétricas</td>
-                                    <td>Monofásica</td>
-                                </tr>
-                                <tr>
-                                    <td>Amperagem mínimo</td>
-                                    <td>10 A</td>
-                                </tr>
-                                <tr>
-                                    <td>Amperagem máximo</td>
-                                    <td>220 A</td>
-                                </tr>
-                                <tr>
-                                    <td>Peso</td>
-                                    <td>20 kg</td>
-                                </tr>
-
-                            </tbody>
-
-                        </table>
-                        <br />
-
-                        <a class="btn btn-danger align-content-center"
-                            href="/wwwroot/Catalogos/inversora-220-pulsada.pdf" target="_blank">
-                            <h5>Download Catálogo</h5>
-                        </a>
-                    </div>
-                </div>
             </div>
-        </main>
-        <!--RODAPÉ-->
-        <footer class="footer-pr">
-            <div class="container">
-                <div class="row justify-content-md-center ">
-                    <div class="col col-md-4">
-                        <div>
-                            <ul class="menu-footer">
-                                <li><a href=""><span class="fa fa-whatsapp fa-2x"></span></a></li>
-                                <li><a href=""><span class="fa fa-facebook-official fa-2x"></span></a></li>
-                                <li><a href=""><span class="fa fa-instagram fa-2x"></span></a></li>
-                                <li><a href=""><span class="fa fa fa-youtube fa-2x"></span></a></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <ul class="menu-footer-dados">
-                                <li><a href="#" class="text-white">
-                                        <h5>WW SOLDAS</h6>
-                                    </a></li>
-                                <li><a href="#" class="text-white">
-                                        <p><i class="fas fa-home me-3"></i>Rua Itinguçu,2811- São Paulo-SP</p>
-                                    </a></li>
-                                <li><a href="#" class="text-white">
-                                        <p>
-                                            <i class="fas fa-envelope me-3"></i>
-                                            vendas@eduar.com.br
-                                        </p>
-                                    </a></li>
-                                <li><a href="" class="text-white">
-                                        <p><i class="fas fa-phone me-3"></i> + 55 11 2957 4061</p>
-                                    </a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a class="whastapp-index"
-                href="https://api.whatsapp.com/send?phone=551129574061&amp;text=Ol%C3%A1%21+estou+na+loja+COMERCIAL+EDUAR+e+gostaria+de+mais+informa%C3%A7%C3%B5es."
-                target="_blank">
-                <i style="margin-top:16px" class="fa fa-whatsapp"></i></a>
-        </footer>
+        </div>
+        <a class="whastapp-index"
+            href="https://api.whatsapp.com/send?phone=551129574061&amp;text=Ol%C3%A1%21+estou+na+loja+COMERCIAL+EDUAR+e+gostaria+de+mais+informa%C3%A7%C3%B5es."
+            target="_blank">
+            <i style="margin-top:16px" class="fa fa-whatsapp"></i></a>
+    </footer>
 
-    </div>
     <script src="/wwwroot/lib/jquery/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/2debddaff5.js" crossorigin="anonymous"></script>
