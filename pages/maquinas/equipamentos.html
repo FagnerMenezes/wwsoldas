@@ -15,236 +15,216 @@
 </head>
 
 <body>
- 
-    <div class="conteudo">
-        <header>
-            <nav class="navbar navbar-expand-lg ">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="/index.html"><img class="logo-home"
-                            src="/wwwroot/images/logo.wwsoldas.png"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 
-                        <span class="navbar-toggler-icon"><span class="fa fa-list"></span></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/pages/sobre.html">Sobre</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/pages/contato.html">Contato</a>
-                            </li>
-                           
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Produtos
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item " href="#">Arame mig</a></li>
-                                    <li><a class="dropdown-item" href="#">Eletrodos</a></li>
-                                    <li><a class="dropdown-item" href="#">Epis</a></li>
-                                    <li><a class="dropdown-item" href="/pages/maquinas/equipamentos.html">Equipamentos</a>
-                                    </li>
-                                </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html"><img class="logo-home"
+                        src="/wwwroot/images/logo.wwsoldas.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 
-                            </li>
+                    <span class="navbar-toggler-icon"><span class="fa fa-list"></span></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/sobre.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/contato.html">Contato</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Produtos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item " href="/pages/arames/arames.html">Arame mig</a></li>
+                                <li><a class="dropdown-item" href="/pages/arames/eletrodos.html">Eletrodos</a></li>
+                                <li><a class="dropdown-item" href="/pages/arames/epis.html">Epis</a></li>
+                                <li><a class="dropdown-item" href="/pages/maquinas/equipamentos.html">Equipamentos</a>
+                            </ul>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="container">
+
+        <div class="row div-titulo-maquinas">
+            <div class="col-md-12 ">
+                <h1 class="h3-titulo-nome-maq"><strong><span>MÁQUINAS DE SOLDA</span></strong></h1>
+            </div>
+        </div>
+
+        <!--INVERSORAS TIG-->
+        <div class="row sub-titulo-maq">
+            <div class="col-md-12 ">
+                <h2 class="h5-sub-titulo-maq"><strong>INVERSORAS TIG</strong></h2>
+            </div>
+        </div>
+        <hr style="border: 2px solid rgb(255, 255, 255); font-weight: bold;" />
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card card-maq">
+                    <a asp-area="" href="/pages/maquinas/Inversora_Digital_120.html"> <img class="card-img-top"
+                            src="/wwwroot/images/inversora-digital.png" alt="Alternate Text" /></a>
+
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Inversora Digital 120A</strong></h5>
+                        <p class="card-text"> Tamanho pequeno, peso leve, alta qualidade </p>
+                        <a href="/pages/maquinas/Inversora_Digital_120.html" class="btn btn-primary">Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card card-maq">
+                    <a asp-area="" href="/pages/maquinas/Inversora-ac-dc-wse-250.html"> <img class="card-img-top"
+                            src="/wwwroot/images/inversora-wse-250.png" alt="Alternate Text" /></a>
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Inversora Wse 250 </strong></h5>
+                        <p class="card-text"> Inversora de solda TIG Alta frequência
+                        </p>
+                        <a href="/pages/maquinas/Inversora-ac-dc-wse-250.html" class="btn btn-primary">Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card card-maq">
+                    <a asp-area="" href="/pages/maquinas/inversora-pulsada-200.html"> <img class="card-img-top"
+                            src="/wwwroot/images/inversora-200m.png" alt="Alternate Text" /></a>
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>INVERSORA TIG A/F 200M</strong></h5>
+                        <p class="card-text"> Inversora de solda TIG Alta frequência 200 Amperes
+                        </p>
+                        <a href="/pages/maquinas/inversora-pulsada-200.html" class="btn btn-primary">Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card card-maq">
+                    <a asp-area="" href="/pages/maquinas/inversora-pulsada-220p.html"> <img class="card-img-top"
+                            src="/wwwroot/images/tig-220p.png" alt="Alternate Text" /></a>
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Inversora Tig 220p</strong></h5>
+                        <p class="card-text"> Inversora Tig A/ F Tig 220p Pulsada Ac/dc 220v
+                        </p>
+                        <a href="/pages/maquinas/inversora-pulsada-220p.html" class="btn btn-primary">Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--INVERSORAS MIG-->
+        <div class="row sub-titulo-maq">
+            <div class="col-md-12">
+                <h3 class="h5-sub-titulo-maq"><strong>INVERSORAS MIG</strong></h3>
+            </div>
+        </div>
+        <hr style="border: 2px solid rgb(255, 255, 255); font-weight: bold;" />
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card card-maq">
+                    <a asp-area="" href="/pages/maquinas/Inversora-mig-130.html"> <img class="card-img-top"
+                            src="/wwwroot/images/mig-130.png" alt="Alternate Text" /></a>
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Inversora Mig 130A</strong></h5>
+                        <p class="card-text">MIG 130A para uso doméstico e profissional
+                        </p>
+                        <a href="/pages/maquinas/inversora-mig-130.html" class="btn btn-primary">Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card card-maq">
+                    <a asp-area="" href="/pages/maquinas/Inversora_mig_multi_140.html"> <img class="card-img-top"
+                            src="/wwwroot/images/mig-140.png" alt="Alternate Text" /></a>
+
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Inversora 140a</strong></h5>
+                        <p class="card-text"> Tamanho pequeno, peso leve, alta qualidade </p>
+                        <a href="/pages/Inversora_mig_multi_140.html" class="btn btn-primary">Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card card-maq">
+                    <a asp-area="" href="/pages/maquinas/inversora_mig-150.html"> <img class="card-img-top"
+                            src="/wwwroot/images/mig-150.png" alt="Alternate Text" /></a>
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Maquina Solda 150a </strong></h5>
+                        <p class="card-text">MAQUÍNA MIG 150A Bivolt 110/220volts
+                        </p>
+                        <a href="/pages/maquinas/inversora_mig-150.html" class="btn btn-primary">Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card card-maq">
+                    <a asp-area="" href="/pages/maquinas/inversora_mig_195.html"> <img class="card-img-top"
+                            src="/wwwroot/images/mig-195.png" alt="Alternate Text" /></a>
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Máquina Mig 195</strong></h5>
+                        <p class="card-text">para solda de fluxo (sem gás) MIG (gás)
+                        </p>
+                        <a href="/pages/maquinas/inversora_mig_195.html" class="btn btn-primary">Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <br>
+    <!--RODAPÉ-->
+    <footer class="footer-pr">
+        <div class="container">
+            <div class="row justify-content-md-center ">
+                <div class="col col-md-4">
+                    <div>
+                        <ul class="menu-footer">
+                            <li><a href=""><span class="fa fa-whatsapp fa-2x"></span></a></li>
+                            <li><a href=""><span class="fa fa-facebook-official fa-2x"></span></a></li>
+                            <li><a href=""><span class="fa fa-instagram fa-2x"></span></a></li>
+                            <li><a href=""><span class="fa fa fa-youtube fa-2x"></span></a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="menu-footer-dados">
+                            <li><a href="#" class="text-white">
+                                    <h5>WW SOLDAS</h6>
+                                </a></li>
+                            <li><a href="#" class="text-white">
+                                    <p><i class="fas fa-home me-3"></i>Rua Itinguçu,2811- São Paulo-SP</p>
+                                </a></li>
+                            <li><a href="#" class="text-white">
+                                    <p>
+                                        <i class="fas fa-envelope me-3"></i>
+                                        vendas@eduar.com.br
+                                    </p>
+                                </a></li>
+                            <li><a href="" class="text-white">
+                                    <p><i class="fas fa-phone me-3"></i> + 55 11 2957 4061</p>
+                                </a></li>
                         </ul>
                     </div>
                 </div>
-            </nav>
-        </header>
-        <br>
-        <main>
-            <div class="row div-titulo-maquinas">
-                <div class="col-md-3 ">
-                    <h3 class= "h3-titulo-nome-maq"><strong ><span>MÁQUINAS DE SOLDA</span></strong></h1>
-                </div>
             </div>
-            <br>
-            <div class="container">
-                <!--INVERSORAS TIG-->
-                <div class="row justify-content-md-center sub-titulo-maq">
-                    <div class="col-md-3 ">
-                        <h5 class="text-center font-weight-bold h5-sub-titulo-maq"><strong>INVERSORAS TIG</strong></h5>
-                    </div>
-                </div>
-                <hr style="border: 2px solid rgb(255, 255, 255); font-weight: bold;" />
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="card card-maq" >
-                            <a asp-area="" href="/pages/maquinas/Inversora_Digital_120.html"> <img class="card-img-top"
-                                    src="/wwwroot/images/inversora-digital.png"
-                                    alt="Alternate Text" /></a>
+        </div>
+        <a class="whastapp-index"
+            href="https://api.whatsapp.com/send?phone=551129574061&amp;text=Ol%C3%A1%21+estou+na+loja+COMERCIAL+EDUAR+e+gostaria+de+mais+informa%C3%A7%C3%B5es."
+            target="_blank">
+            <i style="margin-top:16px" class="fa fa-whatsapp"></i></a>
+    </footer>
 
-                            <div class="card-body">
-                                <h5 class="card-title"><strong>Inversora De Solda Visor Digital 120A</strong></h5>
-                                <p class="card-text"> Tamanho pequeno, peso leve, alta qualidade e economia de
-                                    energia </p>
-                                <a href="/pages/maquinas/Inversora_Digital_120.html"
-                                    class="btn btn-primary">Detalhes</a>
-                            </div>
-                        </div>
-                    </div>                 
-                    <div class="col-md-3">
-                        <div class="card card-maq" >
-                            <a asp-area="" href="/pages/maquinas/Inversora-ac-dc-wse-250.html"> <img
-                                    class="card-img-top"
-                                    src="/wwwroot/images/inversora-wse-250.png"
-                                    alt="Alternate Text"  /></a>
-                            <div class="card-body">
-                                <h5 class="card-title"><strong>Inversora De Solda Wse 250 Wwsoldas</strong></h5>
-                                <p class="card-text"> As maquinas da série AC/DC são as maquinas bidirecionais
-                                </p>
-                                <a href="/pages/maquinas/Inversora-ac-dc-wse-250.html"
-                                    class="btn btn-primary">Detalhes</a>
-                            </div>
-                        </div>
-                    </div>              
-                    <div class="col-md-3">
-                        <div class="card card-maq" >
-                            <a asp-area="" href="/pages/maquinas/inversora-pulsada-200.html"> <img class="card-img-top"
-                                    src="/wwwroot/images/inversora-200m.png"
-                                    alt="Alternate Text"  /></a>
-                            <div class="card-body">
-                                <h5 class="card-title"><strong>TIG A/F 200M</strong></h5>
-                                <p class="card-text"> Inversora de solda TIG Alta frequência 200 Amperes com tocha e
-                                    conjunto de cabos.
-                                </p>
-                                <a href="/pages/maquinas/inversora-pulsada-200.html"
-                                    class="btn btn-primary">Detalhes</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card card-maq">
-                            <a asp-area="" href="/pages/maquinas/inversora-pulsada-220p.html"> <img class="card-img-top"
-                                    src="/wwwroot/images/tig-220p.png"
-                                    alt="Alternate Text"  /></a>
-                            <div class="card-body">
-                                <h5 class="card-title"><strong>Inversora Tig A/ F Tig 220p</strong></h5>
-                                <p class="card-text"> Inversora Tig A/ F Tig 220p Pulsada Ac/dc 220v Ww Soldas
-                                </p>
-                                <a href="/pages/maquinas/inversora-pulsada-220p.html"
-                                    class="btn btn-primary">Detalhes</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <!--INVERSORAS MIG-->
-                <div class="row justify-content-md-center sub-titulo-maq">
-                    <div class="col-md-3">
-                        <h5 class="text-center h5-sub-titulo-maq"><strong>INVERSORAS MIG</strong></h5>
-                    </div>
-                </div>               
-                <hr style="border: 2px solid rgb(255, 255, 255); font-weight: bold;" />
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="card card-maq" >
-                            <a asp-area="" href="/pages/maquinas/Inversora-mig-130.html"> <img
-                                    class="card-img-top"
-                                    src="/wwwroot/images/mig-130.png"
-                                    alt="Alternate Text" /></a>
-                            <div class="card-body">
-                                <h5 class="card-title"><strong>Máquina de solda WWSoldas Mig 130A</strong></h5>
-                                <p class="card-text"> WSoldas MIG 130A é ideal para uso doméstico e profissional
-                                </p>
-                                <a href="/pages/maquinas/Inversora-mig-130.html"
-                                    class="btn btn-primary">Detalhes</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card card-maq" >
-                            <a asp-area="" href="/pages/maquinas/Inversora_mig_multi_140.html"> <img class="card-img-top"
-                                    src="/wwwroot/images/mig-140.png"
-                                    alt="Alternate Text" /></a>
 
-                            <div class="card-body">
-                                <h5 class="card-title"><strong>Inversora Multiprocesso Mig/tig/mma 140a</strong></h5>
-                                <p class="card-text"> Tamanho pequeno, peso leve, alta qualidade  </p>
-                                <a href="/pages/Inversora_mig_multi_140.html"
-                                    class="btn btn-primary">Detalhes</a>
-                            </div>
-                        </div>
-                    </div>                   
-                    <div class="col-md-3">
-                        <div class="card card-maq" >
-                            <a asp-area="" href="/pages/maquinas/inversora_mig-150.html"> <img class="card-img-top"
-                                    src="/wwwroot/images/mig-150.png"
-                                    alt="Alternate Text" /></a>
-                            <div class="card-body">
-                                <h5 class="card-title"><strong>Maquina Solda 150a Bivolt</strong></h5>
-                                <p class="card-text"> Máquina de Solda com 150amperes Bivolt 110/220volts
-                                </p>
-                                <a href="/pages/maquinas/inversora_mig-150.html"
-                                    class="btn btn-primary">Detalhes</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card card-maq" >
-                            <a asp-area="" href="/pages/maquinas/inversora_mig_195.html"> <img class="card-img-top"
-                                    src="/wwwroot/images/mig-195.png"
-                                    alt="Alternate Text" /></a>
-                            <div class="card-body">
-                                <h5 class="card-title"><strong>Máquina De Solda Mig 195</strong></h5>
-                                <p class="card-text"> Máquina de solda, para solda de fluxo (sem gás) e MIG / MAG (gás)
-                                </p>
-                                <a href="/pages/maquinas/inversora_mig_195.html"
-                                    class="btn btn-primary">Detalhes</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <br>
-        <!--RODAPÉ-->
-        <footer class="footer-pr">
-            <div class="container">
-                <div class="row justify-content-md-center ">
-                    <div class="col col-md-4">
-                        <div>
-                            <ul class="menu-footer">
-                                <li><a href=""><span class="fa fa-whatsapp fa-2x"></span></a></li>
-                                <li><a href=""><span class="fa fa-facebook-official fa-2x"></span></a></li>
-                                <li><a href=""><span class="fa fa-instagram fa-2x"></span></a></li>
-                                <li><a href=""><span class="fa fa fa-youtube fa-2x"></span></a></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <ul class="menu-footer-dados">
-                                <li><a href="#" class="text-white">
-                                        <h5>WW SOLDAS</h6>
-                                    </a></li>
-                                <li><a href="#" class="text-white">
-                                        <p><i class="fas fa-home me-3"></i>Rua Itinguçu,2811- São Paulo-SP</p>
-                                    </a></li>
-                                <li><a href="#" class="text-white">
-                                        <p>
-                                            <i class="fas fa-envelope me-3"></i>
-                                            vendas@eduar.com.br
-                                        </p>
-                                    </a></li>
-                                <li><a href="" class="text-white">
-                                        <p><i class="fas fa-phone me-3"></i> + 55 11 2957 4061</p>
-                                    </a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a class="whastapp-index" href="https://api.whatsapp.com/send?phone=551129574061&amp;text=Ol%C3%A1%21+estou+na+loja+COMERCIAL+EDUAR+e+gostaria+de+mais+informa%C3%A7%C3%B5es."  target="_blank">
-                <i style="margin-top:16px" class="fa fa-whatsapp"></i></a>
-        </footer>
-
-    </div>
     <script src="/wwwroot/js/site.js"></script>
     <script src="/wwwroot/lib/jquery/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
