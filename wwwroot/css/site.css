@@ -1,377 +1,365 @@
-﻿
-* {
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+﻿@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+/***************************************************************VARIAVÉIS CSS***/
+:root{
+  --cor_principal: #00008b;
+  --cor02: #9261c8 ;   /* #9261c8; */
+  --cor_texto:white ;
+ --cor_titulos:blue;
+ --cor03:rgb(151, 151, 220) ;
+
+  --font_principal: "Open Sans", sans-serif;
+  --font_titulos:"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.conteudo{
-     
-     background-color:darkblue;
-}
+ * {
+  margin: 0 auto;
+  padding: 0;
+  
+} 
 body{
-    background-color: darkblue;
+  background-color: var(--cor_principal);
+  margin: 0 auto;
+  padding: 0;
+}
+/**#####**/
+/**#####**/
+/**#####**/
+
+/*************************************************************** HEADER- (CABEÇALHO)***/
+.header{}
+
+.navbar {
+  background-color:var(--cor02); 
+  color: var(--cor_texto);
+  width:1200px;
+  border-radius: 0px;
+  margin-top: 50px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 4px 1px rgba(1, 1, 12, 0.326);
+}
+/**css menu**/
+@media screen and (max-width: 1200px) {
+  .navbar {
+    background-color:var(--cor02) ;
+    color: var(--cor_texto);
+    border-radius: 0px;
+    margin: 0px;
+    width: 100%;
+    box-shadow: 2px 2px 4px 1px rgba(1, 1, 12, 0.326);
+  } 
+ 
 }
 
-/* Sticky footer styles
--------------------------------------------------- */
-
-@media (min-width: 768px) {
-    /* html {
-        font-size: 15px;
-    }     */
+.navbar-toggler {
+  color: var(--cor_texto);
 }
-@media (max-width: 768px) {
-    /* html {
-        font-size: 10px;
-    }     */
+.navbar-toggler:hover {
+  color: var(--cor_texto);
+}
+.navbar ul {
+  background-color: var(--cor02);
+  color: var(--cor_texto);
 }
 
-@media (max-width: 769px) {
-    .foto-inversora-digital {
-        width: 120px;
-        height: 120px;
-    }
+.navbar ul li a {
+  color: var(--cor_texto);
+  background-color:var(--cor02) ;
+  font-weight: 700;
+  font-family: var(--font_titulos);
+  font-size: 1.2em;
+  text-transform: uppercase;
 }
-@media (max-width: 769px) {
-    .foto-wse-250 {
-        width: 120px;
-        height: 120px;
-    }
+.navbar li ul li a {
+  color: var(--cor_texto);
+ 
 }
-
-
-.border-top {
-    border-top: 1px solid #e5e5e5;
+.navbar ul li a:focus-within {
+  color: var(--cor_texto);
 }
 
-.border-bottom {
-    border-bottom: 1px solid #e5e5e5;
+.navbar li a:hover {
+  border: 1px solid var(--cor02);
+  /* rgb(67, 177, 30);*/
+  background-color: var(--cor03);
+  /* rgb(67, 177, 30);*/
+  border-radius: 5px;
+  color: var(--cor_texto);
 }
-
-.box-shadow {
-    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+/* .img-logo {
+  width: 50px;
+  height: 80px;
+} */
+.nome-logo {
+  color: var(--cor_texto);
 }
-
-button.accept-policy {
-    font-size: 1rem;
-    line-height: inherit;
-}
-
-/* Sticky footer styles
--------------------------------------------------- */
-
-
-/** CODIGO PAGINAL PRINCIPAL*/
-
-/**image logo na pagina principal***/
 .logo-home {
-    width: 100px;
-    height: 60px;
-    opacity: 1;
+  width: 120px;
+  height: 80px; 
+  
 }
-.banner-home{
-    background-color: darkblue;
-    
+
+
+/**fim css menu**/
+/**#####**/
+/**#####**/
+/**#####**/
+
+/*************************************************************** PRINCIPAL- (MAIN)***/
+
+main{
+ 
+  margin: auto;
+  min-width: 320px;
+  max-width: 960; 
+}
+.card-index {
+  border: 1px solid rgb(117, 117, 237);
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--cor_principal);
+  
+  
+}
+.card-index:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  background-color: rgb(69, 69, 156);
+}
+.card-index .card-img-top {
+  max-width: 100px;
+  max-height: 100px; 
+  position: relative;  
+}
+.card-title {
+  font-size: 17px;
+  text-transform: uppercase;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.card-text {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}
+/****************************/
+/**css maquinas***/
+.card-maq:hover {
+  background-color: #6d2bb7;
+  border: 2px solid rgb(31, 225, 141);
+  cursor: pointer;
+  color: white;
+  transition: 1;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/***css maquinas***/
+.div-titulo-maquinas {
+  text-align: center;
+  border-radius: 5px;
+  
+}
+
+.h3-titulo-nome-maq {
+  color: cornflowerblue;
+  font-weight: 800;
+  text-align:center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+}
+.h5-sub-titulo-maq {
+  color: white;
+  font-weight: 600;
+  text-align: center;
+}
+.row-maq {
+  padding: 15px;
+}
+
+
+/***fim css maquinas***/
+/******************************************/
+/****css arames******/
+.card__arame:hover {
+  background-color: #6d2bb7;
+  border: 2px solid rgb(31, 225, 141);
+  cursor: pointer;
+  color: white;
+  transition: 1;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.card__arame .card-img-top {
+  max-width: 150px;
+  max-height: 150px; 
+  position: relative;  
+}
+/**#####**/
+/**#####**/
+/**#####**/
+
+/**css inversora digital**/
+
+/* .foto-maquinas {
+  width: 400px;
+  height: 400px;
+} */
+
+td {
+  color: white;
+  border: 1px solid lightgray;
+}
+
+tr {
+  color: white;
+  border: 1px solid lightgray;
+}
+
+.table {
+  border: 1px solid lightgray;
+}
+
+.titulo-inversoras {
+  color: white;
+  font-size: 22px;
+  margin-left: 180px;
+  margin-top: 10px; 
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+hr {
+  border: 1px solid #fff;
+}
+
+/**fim css inversora digital**/
+
+/**css contato**/
+
+.form-label {
+  color: white;
+}
+
+/**fim css contato**/
+
+/**css pagina sobre***/
+.text-sobre {
+  color: white;
+}
+/**fim css pagina sobre***/
+
+/***css pagina contato***/
+.list__contato{
+  margin-top: 80px ;
+  list-style: none;
+  
+}
+.list__contato a{
+  color: white;
+  text-decoration: none;
+  
+  
+}
+/***fim css pagina contato***/
+
+/**#####**/
+/**#####**/
+/**#####**/
+
+/*************************************************************** CSS RODAPÉ (FOOTER) ***/
+
+
+.footer-pr {
+  width: 100%;
+  margin: 0px;
+  background-color: var(--cor02);
+  border-top: 1px solid var(--cor_texto);
+}
+
+.fa{
+  color: var(--cor_texto);
+}
+.menu-footer {
+  list-style: none;
+   margin-top: 40px; 
+}
+
+.menu-footer-dados {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.menu-footer-dados li a {
+  text-decoration: none;
+  
+}
+.menu-footer li {
+  display: inline-block;
 }
 .icone_footer {
-    width: 35px;
-    height: 35px;
+  width: 35px;
+  height: 35px;
+}
+.menu-footer-dados li a {
+  color: var(--cor_texto);
 }
 
-.card-img-top {
-    width: 100px;
-    height: 100px;
-    position: relative;
+.whastapp-index {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 1px 1px 2px #888;
+  z-index: 1000;
 }
- 
-.menu-produto{
-    opacity:0.1;
+.whastapp-index:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  background-color: rgb(5, 90, 43);
 }
-
-/***********CARD PAGINAL INICIAL****************/
-
-/**INICIO CSS CARD PG MAQUINAS**/
-.card-maq{   
-    width: 15em;
-}
-.card-maq:hover{
-    background-color:#6d2bb7; /*rgb(62, 47, 227);  /** rgb(30, 6, 95);**/
-    border:2px solid rgb(31, 225, 141);
-    cursor: pointer;
-    color: white;
-    transition: 1;
-    -webkit-transform:scale(1.1);
-        -ms-transform:scale(1.1);
-        transform:scale(1.1);       
-}
-.sub-titulo-maq{
-/* border: 1px solid rgb(62, 62, 241);
-border-radius: 5px;
-background-color: cornflowerblue; */
-
-}
-/**FIM PAGINA CARD MAQUINAS***/
-
-/**--------------------------------------**/
-
-/**ESTILO DA PAGINA INDEX**/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-.text-privacidade{
-    font-size: 12px;
-}
-.whastapp-index{  
-    position:fixed;
-    width:60px;
-    height:60px;
-    bottom:40px;
-    right:40px;
-    background-color:#25d366;
-    color:#FFF;
-    border-radius:50px;
-    text-align:center;
-    font-size:30px;
-    box-shadow: 1px 1px 2px #888;
-    z-index:1000;
-}
-.card-index{
-border: 1px solid rgb(117, 117, 237);
-border-radius: 5px;
-width: 14rem;
-}
-.div-privacidade{
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items:baseline;
-    position: fixed;
-    background-color:white ;
-    width: 400px;
-    height: 120px;
-    color: rgb(21, 4, 73);
-    bottom: 20px;
-    left: 20px;
-    text-align:center;
-}
-.btn-privacidade{
-    width: 120px;
-    height: 25px;
-    border: solid 1px white;
-    border-radius: 5px;
-    color: white;
-    background-color: darkblue;
-         
-}
-.text-privacidade_{
-    color: white;
-}
-.card-index:hover{   
-    
-    -webkit-transform:scale(1.1);
-        -ms-transform:scale(1.1);
-        transform:scale(1.1); 
-    }
-
-    .card-index:hover{   
-    
-       background-color: rgb(69, 69, 156);
-    }
-    .card-index{   
-    
-        background-color: darkblue;
-     }
-
-/**FIM CSS PAGINA INDEX**/
-
-/***-------------------------------------***/
-
-/**CSS MENU PRINCIPAL**/
-@media (max-width: 509px) {
-    .navbar{
-       background-color: #9261c8;
-       color: white;  
-       border-radius: 15px;
-       margin-top: 0px;
-       width: 100%;
-       
-   }
-}
-.navbar-toggler{
-    color:white;
-}
-@media (min-width: 1200px) {
- .navbar{
-    background-color: #9261c8;
-    color: white;  
-    border-radius: 15px;
-    margin-top: 70px;
-    width: 1100px;
-    
-} 
-}
-.navbar ul{
-    background-color: #9261c8;
-    color: white;  
-}
-.navbar ul li a:focus-within{   
-     color: white; 
-   
-}
-.navbar ul li a:active{   
-     background-color: rgb(67, 177, 30); 
-   
-}
-.navbar ul li a{   
-    color: white;
-    background-color: #9261c8;
-    font-weight: 500; 
-}
-.navbar ul li a {   
-    color: white;   
-    font-size: 18px;
-    font-weight: 500; 
-}
-.navbar li a:hover{  
-border: 1px solid rgb(67, 177, 30);;
-   background-color: rgb(67, 177, 30);
-   border-radius: 5px;
-   color: white; 
-    
-}
-.navbar li ul li a{   
-     color: white; 
+.div-privacidade {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  position: fixed;
+  background-color: white;
+  width: 400px;
+  height: 120px;
+  color: rgb(21, 4, 73);
+  bottom: 40px;
+  left: 20px;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 5px;
 }
 
-.img-logo{
-    width: 100px;
-    height: 80px;
-    
+.btn-privacidade {
+  width: 120px;
+  height: 25px;
+  border: solid 1px white;
+  border-radius: 5px;
+  color: white;
+  background-color: darkblue;
 }
-.nome-logo{
-    color: white;
-}
-/**FIM CSS MENU PRINCIPAL**/
 
-/*****-------------------------------******/
-
-/**CSS RODAPÉ**/
-.footer-pr{
-    width: 100%;
-    background-color: #9261c8;
-    border-top:1px solid white ;
+.text-privacidade_ {
+  color: rgb(20, 18, 18);
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 10px;
 }
-.fa-whatsapp{
-     color: rgb(247, 243, 243);
-    
- }
-.fa-facebook-official{
-     color: rgb(247, 243, 243); 
-    
- }
- .fa-instagram{
-     color: rgb(247, 243, 243);
-    
- }
- .fa-youtube{
-     color: rgb(247, 243, 243); 
-    
- }
- .menu-footer{
-     list-style: none;
-     margin-top: 40px;
- }
- .menu-footer-dados{
-    list-style: none;
-    margin-top: 20px;
+.text-privacidade {
+  font-size: 12px;
 }
-.menu-footer-dados li a{
-    text-decoration: none;
-}
- .menu-footer li{
-     display: inline-block;
- }
- /**FIM CSS RODAPÉ**/
-
- /*****-------------------------------******/
-
- /***CSS PAGINA MAQUINAS***/
-
-.container-maquinas{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
-}
-.div-titulo-maquinas
-{  
-    text-align: center;
-    border-radius:5px;   
-}
-.h3-titulo-nome-maq{
-    color: cornflowerblue;
-    font-weight:800;
-    font-size: 25px;
-}
-.row-maq{
-    padding: 15px;
-
-}
-.h5-sub-titulo-maq{
-    color: white;
-    font-weight:600;
-}
- /***FIM CSS PAGINA MAQUINAS***/
-
- /*****-------------------------------******/
-
- /**CSS INVERSORA DIGITAL**/
- 
- .foto-maquinas{
-    width: 400px;
-    height: 400px;
-    
- }
- td{
-     color: white;
-     border: 1px solid lightgray;
- }
- tr{
-    color: white;
-    border: 1px solid lightgray;
-}
- .table{
-     border: 1px solid lightgray;
- }
- .titulo-inversoras{
-     color: white;
-     font-size: 22px;
-     margin-left: 20px;
-     text-transform: uppercase;
-     font-weight: 500;
- }
- hr{
-    
-     border: 2px solid  rgb(159, 9, 139);
- }
-
- .row-maquinas{
-  
-     width:1200px;
- }
- /**FIM CSS INVERSORA DIGITAL**/
-
- /**CSS PAGINA CONTATO**/
- .menu-footer-dados li a{
-     color: white;
- }
- .form-label{
-     color: white;
- }
- /**FIM CSS PAGINA CONTATO**/
-
- /**CSS PAGINA SOBRE***/
-.text-sobre{
-    color: white;
-}
- /**FIM CSS PAGINA SOBRE***/
