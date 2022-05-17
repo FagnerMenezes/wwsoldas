@@ -14,6 +14,10 @@ $(document).ready(function () {
      $(function () {       
           document.querySelector("link[rel='shortcut icon']").href = "/wwwroot/images/favicon_io (1)/favicon.ico";
          // document.querySelector("link[rel='shortcut icon']").href = "/wwwroot/images/logo.wwsoldas.png";
+         var btn_WhatsApp=document.getElementsByClassName('whastapp-index');
+         btn_WhatsApp.creatAttribute('data-bs-toolge','tooltip');
+         btn_WhatsApp.creatAttribute('data-placement','top');
+         btn_WhatsApp.creatAttribute('title','Entre em contato conosco pelo whatsapp');
          
      });
 });
