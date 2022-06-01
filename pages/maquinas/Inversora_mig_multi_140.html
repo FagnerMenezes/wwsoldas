@@ -46,7 +46,8 @@
                                 <li><a class="dropdown-item " href="/pages/arames/arames.html">Arame mig</a></li>
                                 <li><a class="dropdown-item" href="/pages/arames/eletrodos.html">Eletrodos</a></li>
                                 <li><a class="dropdown-item" href="/pages/arames/epis.html">Epis</a></li>
-                                <li><a class="dropdown-item" href="/pages/maquinas/equipamentos.html">Equipamentos</a>
+                                <li><a class="dropdown-item" href="/pages/maquinas/equipamentos.html">Máquinas</a></li>
+                                <li><a class="dropdown-item" href="/pages/ppu/conjuto-solda.html">PPU</a></li>
                             </ul>
 
                         </li>
@@ -59,6 +60,10 @@
     <br>
     <!--CONTEUDO-->
     <main class="container">
+        <div class="container__navegacao">
+            <a href="/index.html">Ínicio</a><span>&gt;</span><a href="/pages/maquinas/equipamentos.html">Máquinas</a><span>&gt;</span><span>Inversora 140A</span> 
+            <hr style="border:1px solid blue;">
+        </div>
         <div class="row">
             <div class="col-md-6">
                 <h5 class="titulo-inversoras">Inversora multiprocesso 140A</h5>
@@ -104,9 +109,9 @@
                         </tbody>
                     </table>
                     <br />
-                    <a class="btn btn-danger align-content-center" href="/wwwroot/Catalogos/mig-multiprocesso-140a.pdf"
+                    <a class="btn btn-danger btn__catalogo" href="/wwwroot/Catalogos/mig-multiprocesso-140a.pdf"
                         target="_blank">
-                        <h5>Download Catálogo</h5>
+                    Download Catálogo
                     </a>
                 </div>
             </div>
@@ -116,42 +121,63 @@
     <!--RODAPÉ-->
     <footer class="footer-pr">
         <div class="container">
-            <div class="row justify-content-md-center ">
-                <div class="col col-md-4">
+            <div class="row ">
+                <div class="col-md-4 footer__col--social">
+                    <address>
+                        <div>
+                          
+                              <h5 class="footer--titulo"><a href="index.html">WW SOLDAS</a></h6>
+                         
+
+                                <ul class="footer__list__social">
+                                    <li><a href=""><span class="fa fa-whatsapp fa-2x"></span></a></li>
+                                    <li><a href=""><span class="fa fa-facebook-official fa-2x"></span></a></li>
+                                    <li><a href=""><span class="fa fa-instagram fa-2x"></span></a></li>
+                                    <li><a href=""><span class="fa fa fa-youtube fa-2x"></span></a></li>
+                                </ul>
+                        </div>
+
+                    </address>
+                </div>
+                <div class="col-md-5 footer__col--endereco">
                     <div>
-                        <ul class="menu-footer">
-                            <li><a href=""><span class="fa fa-whatsapp fa-2x"></span></a></li>
-                            <li><a href=""><span class="fa fa-facebook-official fa-2x"></span></a></li>
-                            <li><a href=""><span class="fa fa-instagram fa-2x"></span></a></li>
-                            <li><a href=""><span class="fa fa fa-youtube fa-2x"></span></a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul class="menu-footer-dados">
-                            <li><a href="#" class="text-white">
-                                    <h5>WW SOLDAS</h6>
+                        <ul class="footer__endereco">
+
+                            <li><a href="https://www.google.com/maps/place/Rua+Miguel+Rachid,+456+-+Vila+Paranagua,+S%C3%A3o+Paulo+-+SP,+03808-130/@-23.4934298,-46.4746031,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce61009080d649:0x867bbbfe978eeb8d!8m2!3d-23.4934298!4d-46.4746031" target="_blank">
+                                    <p><i class="fas fa-home me-3"></i>Rua Miguel Rachid,456- Vila Paranaguá- São
+                                        Paulo-SP</p>
                                 </a></li>
-                            <li><a href="#" class="text-white">
-                                    <p><i class="fas fa-home me-3"></i>Rua Itinguçu,2811- São Paulo-SP</p>
-                                </a></li>
-                            <li><a href="#" class="text-white">
+                            <li><a href="mailto:vendas@eduar.com.br" >
                                     <p>
                                         <i class="fas fa-envelope me-3"></i>
                                         vendas@eduar.com.br
                                     </p>
                                 </a></li>
-                            <li><a href="" class="text-white">
+                            <li><a href="tel:+551129574061" >
                                     <p><i class="fas fa-phone me-3"></i> + 55 11 2957 4061</p>
                                 </a></li>
                         </ul>
                     </div>
                 </div>
+                <div class="col-md-3 footer__col--menu">
+                    <ul class="footer__list__menu">
+                        <li><a href="/index.html" >HOME</a></li>
+                        <li><a href="/pages/sobre.html" >SOBRE</a></li>
+                        <li><a href="/index.html" >PRODUTOS</a></li>
+                        <li><a href="/pages/contato.html">CONTATO</a></li>
+                        <li><a href="/pages/privacidade.html">PRIVACIDADE</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-
+            <br>
+            <div class="row">
+                <p class="footer__copyright">WWsoldas distribuidor de materiais para solda. &ensp;Copyright &copy;2022 </p>
+            </div>
+        </div>              
         <a class="whastapp-index"
-            href="https://api.whatsapp.com/send?phone=551129574061&amp;text=Ol%C3%A1%21+estou+na+loja+COMERCIAL+EDUAR+e+gostaria+de+mais+informa%C3%A7%C3%B5es."
-            target="_blank">
+            href="https://api.whatsapp.com/send?phone=551129574061&amp;text=Ol%C3%A1%21+estou+no+site+WWsoldas+e+gostaria+de+mais+informa%C3%A7%C3%B5es."
+            target="_blank" data-bs-toggle="tooltip" data-placement="top"
+            title="Entre em contato conosco pelo whatsapp">
             <i style="margin-top:16px" class="fa fa-whatsapp"></i>
         </a>
     </footer>
