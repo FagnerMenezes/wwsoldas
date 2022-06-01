@@ -2,66 +2,79 @@
 <html lang="pt-br">
 
 <head>
-
+    <title>Home</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link class="fivincon_" id="fivincon" rel="shortcut icon" href="" type="image/x-icon">
-    <title>Home</title>
+    <meta name="keywords" content="Solda, Soldagem, Eletrodos, Ferramentas">
+    <meta name="author" content="Fagner Menezes" />
+    <meta name="description" content="Materiais para solda " />
+
     <link rel="stylesheet" href="./wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.datatables.net/1.11.5/css/dataTables.bulma.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/wwwroot/css/site.css" />
+    <link rel="shortcut icon" href="/wwwroot/images/favicon/favicon-32x32.png" type="image/x-icon">
+
 </head>
 
 <body>
-    
-    <!--CABEÇALHO-->
-    <header>
-        <nav class="navbar navbar-expand-lg ">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="/index.html"><img class="logo-home"
-                        src="./wwwroot/images/logo.wwsoldas.png"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon fa fa-list"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/pages/sobre.html">Sobre</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/pages/contato.html">Contato</a>
-                        </li>
+    <div id="presentation">
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Produtos
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item " href="/pages/arames/arames.html">Arame mig</a></li>
-                                <li><a class="dropdown-item" href="/pages/arames/eletrodos.html">Eletrodos</a></li>
-                                <li><a class="dropdown-item" href="/pages/arames/epis.html">Epis</a></li>
-                                <li><a class="dropdown-item" href="/pages/maquinas/equipamentos.html">Equipamentos</a>
-                            </ul>
+        <!--CABEÇALHO-->
+        <header>
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="/index.html"><img class="logo-home"
+                            src="./wwwroot/images/logo.wwsoldas.png"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon fa fa-list"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
 
-                        </li>
-                    </ul>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/sobre.html">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/contato.html">Contato</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Produtos
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown--item" href="/pages/arames/arames.html">Arame mig</a></li>
+                                    <li><a class="dropdown--item" href="/pages/arames/eletrodos.html">Eletrodos</a></li>
+                                    <li><a class="dropdown--item" href="/pages/arames/epis.html">Epis</a></li>
+                                    <li><a class="dropdown--item" href="/pages/maquinas/equipamentos.html">Maquinas</a></li>
+                                    <li><a class="dropdown--item" href="/pages/ppu/conjuto-solda.html">PPU</a></li>
+                                </ul>
+
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
-    <!-- <a class="whastapp-index" href="https://api.whatsapp.com/send?phone=551129574061&amp;text=Ol%C3%A1%21+estou+na+loja+COMERCIAL+EDUAR+e+gostaria+de+mais+informa%C3%A7%C3%B5es." target="_blank"><img src="/wwwroot/images/whats-novo.png"></a> -->
+            </nav>
+        </header>
+
+        <div class="presentation__btn__produtos">
+            <a type="button" href="#main__produtos">Produtos</a>
+        </div>
+    </div>
+    <br>
+    <br>
     <br>
     <!--CONTEUDO-->
-    <main class="container">            
+    <main class="container">
         <!---SEÇÃO PRODUTOS-->
-        <section>
+        <section id="main__produtos">
             <div class="row">
                 <div class="col-sm-3">
                     <div class="card card-index">
@@ -90,8 +103,8 @@
                         <a href="/pages/arames/arames.html">
                             <img class="card-img-top" src="/wwwroot/images/arame.png" alt="Card image cap">
                             <div class="card-body">
-                                <p class="card-text text-center"><span
-                                        class="btn btn-outline-secondary font-weight-bold">ARAMES</span></p>
+                                <p class="card-text text-center">
+                                    <span class="btn btn-outline-secondary font-weight-bold">ARAMES</span></p>
                             </div>
                         </a>
                     </div>
@@ -123,7 +136,7 @@
                 </div>
                 <div class="col-sm-3">
                     <div class="card card-index">
-                        <a href="#">
+                        <a href="/pages/ppu/conjuto-solda.html">
                             <img class="card-img-top" src="/wwwroot/images/gas.png" alt="Card image cap">
                             <div class="card-body">
                                 <p class="card-text text-center"><span
@@ -164,39 +177,62 @@
     <!--RODAPÉ-->
     <footer class="footer-pr">
         <div class="container">
-            <div class="row justify-content-md-center ">
-                <div class="col col-md-4">
+            <div class="row ">
+                <div class="col-md-4 footer__col--social">
+                    <address>
+                        <div>
+
+                            <h5 class="footer--titulo"><a href="index.html">WW SOLDAS</a></h6>
+
+
+                                <ul class="footer__list__social">
+                                    <li><a href=""><span class="fa fa-whatsapp fa-2x"></span></a></li>
+                                    <li><a href=""><span class="fa fa-facebook-official fa-2x"></span></a></li>
+                                    <li><a href=""><span class="fa fa-instagram fa-2x"></span></a></li>
+                                    <li><a href=""><span class="fa fa fa-youtube fa-2x"></span></a></li>
+                                </ul>
+                        </div>
+
+                    </address>
+                </div>
+                <div class="col-md-5 footer__col--endereco">
                     <div>
-                        <ul class="menu-footer">
-                            <li><a href=""><span class="fa fa-whatsapp fa-2x"></span></a></li>
-                            <li><a href=""><span class="fa fa-facebook-official fa-2x"></span></a></li>
-                            <li><a href=""><span class="fa fa-instagram fa-2x"></span></a></li>
-                            <li><a href=""><span class="fa fa fa-youtube fa-2x"></span></a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul class="menu-footer-dados">
-                            <li><a href="#" class="text-white">
-                                    <h5>WW SOLDAS</h6>
-                                </a></li>
-                            <li><a href="#" class="text-white">
+                        <ul class="footer__endereco">
+
+                            <li><a href="https://www.google.com/maps/place/Rua+Miguel+Rachid,+456+-+Vila+Paranagua,+S%C3%A3o+Paulo+-+SP,+03808-130/@-23.4934298,-46.4746031,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce61009080d649:0x867bbbfe978eeb8d!8m2!3d-23.4934298!4d-46.4746031"
+                                    target="_blank">
                                     <p><i class="fas fa-home me-3"></i>Rua Miguel Rachid,456- Vila Paranaguá- São
                                         Paulo-SP</p>
                                 </a></li>
-                            <li><a href="#" class="text-white">
+                            <li><a href="mailto:vendas@eduar.com.br">
                                     <p>
                                         <i class="fas fa-envelope me-3"></i>
                                         vendas@eduar.com.br
                                     </p>
                                 </a></li>
-                            <li><a href="" class="text-white">
+                            <li><a href="tel:+551129574061">
                                     <p><i class="fas fa-phone me-3"></i> + 55 11 2957 4061</p>
                                 </a></li>
                         </ul>
                     </div>
                 </div>
+                <div class="col-md-3 footer__col--menu">
+                    <ul class="footer__list__menu">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="/pages/sobre.html">SOBRE</a></li>
+                        <li><a href="index.html">PRODUTOS</a></li>
+                        <li><a href="/pages/contato.html">CONTATO</a></li>
+                        <li><a href="/pages/privacidade.html">PRIVACIDADE</a></li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <p class="footer__copyright">WWsoldas distribuidor de materiais para solda. &ensp;Copyright &copy;2022
+                </p>
             </div>
         </div>
+
         <div class="div-privacidade" id="div-privacidade_">
             <div class="row ">
                 <div class="col-sm-12">
@@ -205,12 +241,12 @@
                         <a href="/pages/privacidade.html">mais informaçoes.</a></p>
                 </div>
                 <div class="col-sm-2">
-                    <button class="btn-privacidade" id="btn-privac" onclick="ocultaDiv()">Entendi</button>
+                    <button class="btn-privacidade" id="btn-privac" onclick="ocultaDiv()">Aceitar</button>
                 </div>
             </div>
         </div>
         <a class="whastapp-index"
-            href="https://api.whatsapp.com/send?phone=551129574061&amp;text=Ol%C3%A1%21+estou+na+loja+COMERCIAL+EDUAR+e+gostaria+de+mais+informa%C3%A7%C3%B5es."
+            href="https://api.whatsapp.com/send?phone=551129574061&amp;text=Ol%C3%A1%21+estou+no+site+WWsoldas+e+gostaria+de+mais+informa%C3%A7%C3%B5es."
             target="_blank" data-bs-toggle="tooltip" data-placement="top"
             title="Entre em contato conosco pelo whatsapp">
             <i style="margin-top:16px" class="fa fa-whatsapp"></i>
