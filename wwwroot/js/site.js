@@ -12,8 +12,7 @@ function ocultaDiv() {
 
 $(document).ready(function () {
      $(function () {       
-          document.querySelector("link[rel='shortcut icon']").href = "/wwwroot/images/favicon_io (1)/favicon.ico";
-         // document.querySelector("link[rel='shortcut icon']").href = "/wwwroot/images/logo.wwsoldas.png";
+          document.querySelector("link[rel='shortcut icon']").href = "/wwwroot/images/favicon/favicon.ico";    
          var btn_WhatsApp=document.getElementsByClassName('whastapp-index');
          btn_WhatsApp.creatAttribute('data-bs-toolge','tooltip');
          btn_WhatsApp.creatAttribute('data-placement','top');
