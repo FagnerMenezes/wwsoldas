@@ -1,0 +1,63 @@
+/*************************************************************** HEADER- (CABEÇALHO)***/
+@import url(/wwwroot/css/site.css);
+.navbar {
+    background-color:var(--cor02);    /*var(--cor02); */
+    color: var(--cor_texto);
+    width:1200px;
+    margin-top: 50px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px 1px white;
+  }
+  
+  /**css menu**/
+  
+  .navbar-toggler {
+    color: var(--cor_texto);
+  }
+  .navbar-toggler:hover {
+    color: var(--cor_texto);
+  }
+  .navbar ul {
+    background-color: var(--cor02);
+    color: var(--cor_texto);
+  }
+  
+   .navbar ul li a {
+    color: var(--cor_texto);    
+    font-weight: 700;
+    font-family: var(--font_titulos);
+    font-size: 1.2em;
+    text-transform: uppercase;
+   
+  } 
+  .navbar ul li .nav-link:focus-within {
+     color: white;  
+     border-radius: 5px; 
+  }
+   .navbar li .nav-link:hover {
+    border-radius: 5px; 
+    color: gold; 
+    
+  } 
+  .navbar li ul li a {
+     color: var(--cor_texto);  
+  }
+  .dropdown-item:hover{
+      background-color:var(--cor02);
+      color: gold;
+  }
+ 
+  .nome-logo {
+    color: var(--cor_texto);
+  }
+  .logo-home {
+    width: 120px;
+    height: 80px; 
+    
+  }
+  .menu__brand{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+  }
